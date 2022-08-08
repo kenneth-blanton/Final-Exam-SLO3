@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fluid Converter App</title>
+    <style>
+        p {text-align: center;}
+    </style>
+    <script src="info.js"></script>
+    
+</head>
+<body style="background-color: powderblue;">
+
+<form>
+    <input type="text" id="name" name="name"
+    style="display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items:center;
+        text-align: center;">
+    <span id="newName" 
+    style="display: flex;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items:center;
+    text-align: center;"></span>
+    <button id = "name" type="button" onclick="setName()"
+        style="display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items:center;
+        text-align: center;"> Update Name
+    </button>
+    <br>
+
+    <input type="text" id="number" name="number"
+    style="display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items:center;
+        text-align: center;">
+    <span id="newNumber"
+    style="display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items:center;
+        text-align: center;"></span>
+    <button id = "number" type="button" onclick="setNumber()" 
+        style="display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;"> Update ID
+    </button>
+    <br>
+
+    <input type="text" id="phone" name="phone"
+    style="display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items:center;
+        text-align: center;">
+    <span id="newPhone"
+    style="display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items:center;
+        text-align: center;"></span>
+    <button id = "phone" type="button" onclick="setPhone()" 
+        style="display: flex;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;"> Update Phone Number
+    </button>
+    
+</form>
+<p id="demo"></p>
+</body>
+<script>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = "Bank Account Open Date: " + d.toDateString();
+</script>
+</html>

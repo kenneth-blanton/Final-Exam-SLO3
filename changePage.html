@@ -1,0 +1,28 @@
+<input id="changePass"/>
+<button id="changePassBtn" type"Button" onclick='changePassBtnClick()'>Change Password</button>
+
+
+<input id="login"/>
+<button id="loginBtn" type"Button" onclick='loginBtnClick()'>Login</button>
+
+
+<script>
+    if(!localStorage.getItem('password')){
+      localStorage.setItem('password', 'pass');
+    }
+
+    function changePassBtnClick(){
+      localStorage.setItem('password', document.getElementById('changePass').value);
+      alert('Password changed');
+      document.getElementById("changePass").value = '';
+    }
+
+    function loginBtnClick(){
+      if(document.getElementById('login').value == localStorage.getItem('password')){
+        alert('Correct Login');
+        window.open("menu.html");
+      }else{
+        alert('Wrong Password');
+      }
+    }
+    </script>

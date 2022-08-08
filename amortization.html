@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Amortization</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet'  href='a_style.css'>
+        <script src="amortization.js"></script>
+</head>
+
+<header>
+    <div class="heading">
+        <h2>Amortization Calculator</h2>
+    </div>
+</header>
+
+<body>
+  
+
+    <form id="calc">
+        <table>
+            <tr>
+                <td>Loan Amount: </td>
+                <td>$<input type="number" name="loanAmount" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>Duration of Loan in Years:</td>
+                <td><input type="number" name="loanDurationMonth" value=""></td>
+            </tr>
+            
+
+            <tr>
+                <td>Interest Rate (APR): </td>
+                <td><input type="number" name="interestRate" value="">%</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"><button id="btn_calculate" onclick="myFunction()">Calculate</button></td>
+            </tr>
+        </table>              
+    </form> 
+    
+    <ul>
+        <li><p id="demo"></p></li>
+        <li><p id="calculations"></p></li>          
+    </ul>
+    
+        <table id="tbl_result" class="hide">
+            <thead>
+            <tr>
+                <th>Month</th>
+                <th>Principal</th>
+                <th>Interest</th>
+                <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody id="tbl_body">    
+            </tbody>
+        </table>        
+
+    <ol>
+        <li><p><br>Learn the importance of paying off your mortgage <em>now</em></p></li>
+        <h1><br>Ways to Pay Off Mortgage</h1>
+        <li><p><br>Extra House Payments</p></li>
+        <li><p>Save More and Use That Money to Pay Principal</p></li>
+        <li><p>Refinance</p></li>
+    </ol>
+      
+      
+</body>

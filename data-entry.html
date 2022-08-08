@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="bank_account.css">
+</head>
+
+<body>
+ 
+  <div class="flex">
+  <div class="element-center">
+    
+    <div id="acctBalance">
+        <h1>
+            Total Balance
+        </h1>
+        <label id="acctBalanceLbl"></label>
+        <p>Line of credit: $1000</p>
+        <p id="interest"></p>
+    </div>
+
+    <div id="inputs">
+        <h2>
+            Deposit
+        </h2>
+        <input type="text" id="userDeposit" required>
+        <button id="btnDeposit">Deposit</button>
+
+        <h2>
+            Withdraw
+        </h2>
+        <input type="text" id="userWithdraw" required>
+        <button id="btnWithdraw">Withdraw</button>
+        <br>
+        <a id="recommend">Recommendations</a>
+    </div>
+  </div>
+  </div>
+
+    <script type="text/javascript" src="bank_account_script.js"></script>
+</body>
+
+</html>
