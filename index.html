@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Title Page</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="index.js" defer></script>
-	<link href='index_style.css' rel='stylesheet'>
+		<title>Amortization</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet'  href='a_style.css'>
+        <script src="amortization.js"></script>
 </head>
+
+<header>
+    <div class="heading">
+        <h2>Amortization Calculator</h2>
+    </div>
+</header>
+
 <body>
-	<div class="background-img">
-		<div class="container-fluid">
-			<div class="row">
-				
-				<div class="col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8 col-xl-4 offset-xl-8 pl-0">
-					<div class="signin">
-						<form class="signin-form">
-							<div class="text-center mb-4 logo">
-								<h1>Coding Xpress</h1>
-							</div>
+  
 
-							<div class="form-row">
-								<div class="form-group col-12">
-									<h6 class="text-center">Hi There!</h6>
-									<label class="text-center d-block">Sign-In to your dashboard</label>
-								</div>
-							</div>
-							
-							<div class="form-row">
-								<div class="form-group col-12">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" class="form-control" placeholder="Enter email">
-								</div>
-							</div>
+    <form id="calc">
+        <table>
+            <tr>
+                <td>Loan Amount: </td>
+                <td>$<input type="number" name="loanAmount" value=""></td>
+            </tr>
+            
+            <tr>
+                <td>Duration of Loan in Years:</td>
+                <td><input type="number" name="loanDurationMonth" value=""></td>
+            </tr>
+            
 
-							<div class="form-row">
-								<div class="form-group col-12">
-									<label for="password">Password</label>
-									<input type="password" name="password" class="form-control" id="password" placeholder="Enter password">
-								</div>
-							</div>
-							
-							<div class="form-row">
-								<div class="form-group col-12">
-								<button type="submit" class="btn btn-info text-center btn-block" ><a href="menu.html">Login</a></button>
-							</div>
-							</div>
-							
-							<div class="form-row">
-								<div class="form-group col-12">
-									<button id="changePassBtn" type"Button" onclick='changePassBtnClick()'><a href="changePage.html">Sign Up</a></button>
-								</div>
-							</div>
+            <tr>
+                <td>Interest Rate (APR): </td>
+                <td><input type="number" name="interestRate" value="">%</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"><button id="btn_calculate" onclick="myFunction()">Calculate</button></td>
+            </tr>
+        </table>              
+    </form> 
+    
+    <ul>
+        <li><p id="demo"></p></li>
+        <li><p id="calculations"></p></li>          
+    </ul>
+    
+        <table id="tbl_result" class="hide">
+            <thead>
+            <tr>
+                <th>Month</th>
+                <th>Principal</th>
+                <th>Interest</th>
+                <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody id="tbl_body">    
+            </tbody>
+        </table>        
 
-							<a></a>
-							
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <ol>
+        <li><p><br>Learn the importance of paying off your mortgage <em>now</em></p></li>
+        <h1><br>Ways to Pay Off Mortgage</h1>
+        <li><p><br>Extra House Payments</p></li>
+        <li><p>Save More and Use That Money to Pay Principal</p></li>
+        <li><p>Refinance</p></li>
+    </ol>
+      
+      
 </body>
-</html>
