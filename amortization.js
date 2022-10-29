@@ -55,7 +55,7 @@ function myFunction() {
             var m;
             var balance = principal;
             var totalinterest = 0;
-            for (m = 1; m < months; m++) {
+            for (m = 1; m < months + 1; m++) {
                 var tointerest = rnd(balance * i);
                 // rounding errors accumulate when using floating point numbers
             // 

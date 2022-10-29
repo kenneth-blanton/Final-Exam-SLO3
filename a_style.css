@@ -113,12 +113,6 @@ ul{
     padding: 5px 10px;
     border: 1px solid black;
  }
- 
- form table th {
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 3px solid black;
- }
 
  h1 {
      font-size: 22px;
@@ -135,25 +129,22 @@ ul{
  }
 
  td {
-   text-align: right;
-   padding: 5px;
+   padding: auto;
    text-align: center;
-   border: 3px solid black;
-   border-collapse: collapse;
+   border: 1px solid black;
  }
 
  table#tbl_result {
-    justify-content: center;
-   text-align: center;
-   border-bottom: 1px solid black;
- }
+   border: 1px solid black;
+}
+
  .hide {
    display:none;
  }
  .show {
-   display:block;
+   display:flexbox;
+   width: 100%;
    background-color: #7375ff;
-   text-align: center;
    border-bottom: 1px solid black;
    border-collapse: collapse;
  }
